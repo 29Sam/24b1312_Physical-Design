@@ -1,37 +1,34 @@
-Physical Design Examples – Full Adder and Kogge–Stone Adder
+# Physical Design Examples – Full Adder and Kogge–Stone Adder
 
 This repository contains two ASIC design examples implemented using OpenLane’s full RTL to GDS flow on the Sky130A PDK:
 
-fa – Clocked 1-bit Full Adder
-
-ks_adder – Multi-bit Kogge–Stone Adder
+- fa – clocked 1-bit full adder  
+- ks_adder – multi-bit Kogge–Stone adder  
 
 Each design includes:
 
-Synthesizable Verilog RTL
+- Synthesizable Verilog RTL  
+- Validated OpenLane `config.tcl`  
+- Ready-to-run full-flow invocation  
 
-Validated OpenLane config.tcl
+---
 
-Ready-to-run full-flow invocation
+## Repository Structure
 
-Repository Structure
-.
-├── fa
-│   ├── src/
-│   │   └── fa.v
-│   └── config.tcl
-│
-└── ks_adder
-    ├── src/
-    │   └── ks_adder.v
-    └── config.tcl
-
+- `fa/`
+  - `src/fa.v`
+  - `config.tcl`
+- `ks_adder/`
+  - `src/ks_adder.v`
+  - `config.tcl`
 
 Both folders are complete and directly runnable with:
 
+```bash
 ./flow.tcl -design <design_name> -tag run1 -overwrite
+```
 
-1. Setup Instructions
+# 1. Setup Instructions
 Prerequisites
 
 Linux (Ubuntu recommended)
