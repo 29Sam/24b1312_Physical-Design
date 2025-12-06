@@ -3,7 +3,7 @@
 #
 # Instructions:
 #   Substitute appropriate values for the variables in the "USER-SET PARAMETERS"
-#   section (For ex. t=10, a=0, b=5). Every variable directly affects timing analysis:
+#   section (For ex. t=10.0, a=0.0, b=5.0). Every variable directly affects timing analysis:
 #       - CLOCK_PERIOD_NS      → timing difficulty
 #       - INPUT/OUTPUT delays  → external interface timing
 #       - CLOCK_UNCERTAINTY    → jitter/skew margin
